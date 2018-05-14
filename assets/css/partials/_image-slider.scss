@@ -1,0 +1,34 @@
+.image-slider {
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+  width: 100%;
+  height: 380px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  .image-slider-image {
+    background-color: $color2;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 280px;
+    max-height: 280px;
+    margin: 40px 20px 20px 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0,0,0,.3);
+    animation: image-slider 20s linear infinite alternate;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes image-slider {
+  0%   { transform: translateX(0);}
+  100% { transform: translateX(-1440px); }
+}

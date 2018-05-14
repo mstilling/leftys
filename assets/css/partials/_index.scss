@@ -1,0 +1,138 @@
+#index-section-1 {
+  position: relative;
+  height: 100vh;
+  background-image: radial-gradient(47% 100%, #FF7A00 50%, #FF3605 100%);
+  background-color: $color1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    background-image: radial-gradient(60% 70%, #FF7A00 50%, #FF3605 100%);
+  }
+
+  img {
+    position: absolute;
+    max-width: 600px;
+    z-index: 0;
+    transform: translateX(15px) translateY(-20px);
+
+    @media only screen and (max-width: 560px) {
+      max-width: 500px;
+      transform: translateX(15px) translateY(-20px);
+    }
+
+    @media only screen and (max-width: 480px) {
+      max-width: 420px;
+      transform: translateX(15px) translateY(-20px);
+    }
+
+    @media only screen and (max-width: 360px) {
+      max-width: 400px;
+      transform: translateX(15px) translateY(-20px);
+    }
+  }
+
+  h1 {
+
+    #our-food-text {
+      letter-spacing: 3px;
+      margin-left: 40px;
+
+      @media only screen and (max-width: 440px) {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .stand-or-truck {
+    position: absolute;
+    bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 640px) {bottom: 10px;}
+
+    p {
+      margin: 20px 0 5px 0;
+    }
+
+    .stand-or-truck-btns {
+      width: 100%;
+      margin: 5px 0 20px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 5px 10px;
+      }
+
+      @media only screen and (max-width: 640px) {
+        flex-direction: column;
+
+        .btn {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+#index-section-2 {
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  min-height: 40vh;
+  padding: 20px 0 60px 0;
+
+  p {
+    text-align: center;
+    width: $s-width;
+  }
+}
+
+#index-section-3 {
+  background-color: $color2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  min-height: 40vh;
+  padding: 60px 0;
+
+  p {
+    text-align: center;
+    width: $s-width;
+
+    &:nth-child(4) {
+      margin-top: -5px;
+    }
+  }
+
+
+  .index-contact-btns {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 768px) {flex-direction: column;}
+
+    .section-index-contact-btns {
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        margin: 10px 10px;
+      }
+    }
+  }
+}

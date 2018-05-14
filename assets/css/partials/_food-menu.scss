@@ -1,0 +1,320 @@
+.menu-section-1 {
+  background-image: radial-gradient(47% 100%, #FF7A00 50%, #FF3605 100%);
+  background-color: $color1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  @media only screen and (max-width: 768px) {
+    background-image: radial-gradient(60% 70%, #FF7A00 50%, #FF3605 100%);
+  }
+
+  img {
+    position: absolute;
+    max-width: 600px;
+    z-index: 0;
+    transform: translateX(15px) translateY(0px);
+
+    @media only screen and (max-width: 560px) {
+      max-width: 500px;
+      transform: translateX(15px) translateY(-10px);
+    }
+
+    @media only screen and (max-width: 480px) {
+      max-width: 420px;
+      transform: translateX(15px) translateY(0px);
+    }
+
+    @media only screen and (max-width: 360px) {
+      max-width: 400px;
+      transform: translateX(15px) translateY(0px);
+    }
+  }
+
+  h1.stand-menu-title {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    line-height: 60px;
+
+    @media only screen and (max-width: 440px) {
+      line-height: 30px;
+    }
+
+    #authentic-text {
+      font-size: 110px;
+      line-height: 60px;
+      margin-left: 10px;
+
+      @media only screen and (max-width: 440px) {
+        font-size: 68px;
+        line-height: 30px;
+      }
+    }
+
+    #chicago-style-text {
+      font-size: 80px;
+      line-height: 90px;
+
+      @media only screen and (max-width: 440px) {
+        font-size: 50px;
+        line-height: 70px;
+      }
+    }
+
+    #hotdogs-text {
+      font-size: 130px;
+      margin-right: 30px;
+      line-height: 80px;
+
+      @media only screen and (max-width: 440px) {
+        font-size: 80px;
+        line-height: 36px;
+      }
+    }
+
+    #specialty-text {
+      font-size: 110px;
+      line-height: 110px;
+      margin-left: 10px;
+
+      @media only screen and (max-width: 440px) {
+        font-size: 68px;
+        line-height: 86px;
+      }
+    }
+  }
+
+  i {
+    position: absolute;
+    bottom: 40px;
+    color: $color2;
+    font-size: 24px;
+    animation: down-arrow .5s ease infinite alternate;
+  }
+
+  a.btn {margin: 10px 0;}
+}
+
+.food-menu-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: $color6;
+  transform-origin: center top;
+
+  &.stick {
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    margin: 0 10px 5px 10px;
+
+    font-family: $font1;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color4;
+    text-decoration: none;
+    text-align: center;
+    transition: all 150ms ease;
+
+    &:hover {
+      color: $color2;
+      transform: scale3d(1.1,1.1,1.1);
+      transition: all 250ms ease;
+    }
+
+    @media only screen and (max-width: 386px) {
+      padding: 5px 10px;
+      margin: 5px;
+    }
+  }
+}
+
+.menu-food-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 0;
+
+  h2 {margin-left: 20px; margin-right: 20px;}
+
+  #upgrade-dog {
+    text-align: center;
+    margin: 20px 20px;
+  }
+}
+
+.food-menu-item-container {
+  max-width: 960px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .food-menu-item {
+    max-width: 280px;
+    min-width: 280px;
+    height: 220px;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    @media only screen and (max-width: 639px) {
+      margin: 0 20px;
+      padding: 30px 20px;
+    }
+
+
+    .food-menu-item-title,
+    .food-menu-item-description,
+    .food-menu-item-price, {
+      margin: 0;
+      @media only screen and (max-width: 639px) {letter-spacing: 0px;}
+    }
+
+    .food-menu-item-description {
+      height: 130px;
+    }
+
+    .food-menu-item-price {
+      font-family: $font1;
+      font-size: 24px;
+    }
+  }
+}
+
+#hot-dogs {
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+
+  @media only screen and (max-width:639px) {.food-menu-item {border-bottom: 1px solid $color2;}}
+}
+
+#specialty-dogs {
+  background-color: $color2;
+
+  @media only screen and (max-width:639px) {
+    .food-menu-item {
+      border-bottom: 1px solid $color3;
+    }
+
+    .food-menu-item-container :nth-child(6) {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#other-stuff {
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+
+  @media only screen and (max-width:639px) {
+    .food-menu-item {
+      border-bottom: 1px solid $color2;
+    }
+
+    .food-menu-item-container :nth-child(9) {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#stand-extras {
+  background-color: $color2;
+
+  .food-menu-item {
+    max-width: 280px;
+    min-width: 160px;
+    height: 60px;
+    margin: 20px 20px 0 20px;
+    justify-content: center;
+  }
+
+  #extra-peppers {
+    font-family: $font1;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 20px;
+
+    span {color:$color3};
+  }
+
+  @media only screen and (max-width:639px) {
+    .food-menu-item {
+      border-bottom: 1px solid $color3;
+      padding: 10px 20px 20px 20px;
+    }
+  }
+}
+
+#shakes {
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+
+  .food-menu-item {
+    max-width: 280px;
+    min-width: 280px;
+    height: 110px;
+    margin: 20px 10px 10px 10px;
+    justify-content: center;
+
+    h3{margin-bottom: 10px;}
+
+    p span {
+      font-family: $font1;
+      font-size: 24px;
+      color: $color1;
+    }
+  }
+
+  @media only screen and (max-width:639px) {
+    .food-menu-item {
+      border-bottom: 1px solid $color2;
+      margin: 20px 10px 0 10px;
+    }
+
+    .food-menu-item-container :nth-child(6) {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#burgers{
+  background: $color4 url("../img/leftys-pattern-light.jpg") repeat fixed center;
+
+  @media only screen and (max-width:639px) {
+    .food-menu-item {
+      border-bottom: 1px solid $color2;
+      height: auto;
+
+      h3{margin-bottom: 20px;}
+      .food-menu-item-description{margin-bottom: 0; padding-bottom: 0;}
+      .food-menu-item-price{margin-top: 0; padding-top: 0;}
+    }
+  }
+}
+
+@keyframes down-arrow {
+  0%   { transform: translateY(0);}
+  100% { transform: translateY(10px); }
+}

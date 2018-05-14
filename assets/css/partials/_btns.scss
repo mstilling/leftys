@@ -1,0 +1,58 @@
+.btn {
+  font-family: $font1;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 1.33px;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 250px;
+}
+
+.yellow-btn {
+  background-color: $color2;
+  color: $color3;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    background-color: $color4;
+    transition: background-color 250ms ease;
+  }
+}
+
+.red-btn {
+  background-color: $color1;
+  color: $color3;
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: $color3;
+    color: $color4;
+    transition: all 250ms ease;
+  }
+}
+
+.light-btn {
+  background-color: $color4;
+  color: $color3;
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: $color3;
+    color: $color4;
+    transition: all 250ms ease;
+  }
+}
+
+.small-btn {
+  width: 144px;
+  padding: 8px 0;
+
+  @media only screen and (max-width: 640px) {
+    width: 280px;
+  }
+}
+
+.large-btn {
+  width: 280px;
+  padding: 8px 0;
+}

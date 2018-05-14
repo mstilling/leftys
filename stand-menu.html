@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Food Stand Menu - Lefty's</title>
+
+    <!-- Favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='./assets/img/favicon.ico' />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Typekit Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/pco3yop.css">
+
+    <!-- Animate On Scroll -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/plug-in/aos.css">
+
+    <!-- Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
+
+  </head>
+
+
+  <body>
+
+    <!-- Header -->
+    <header>
+
+      <a href="index.html">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 215">
+          <path d="M150.7 51.5c-1.9 0-3.5 0-5.2-.2-8.4 14.4-43.7 66.1-54.3 80.2 12.6 11.7 24.1 22.5 36.4 22.5 6.2 0 10.5-4.9 11.1-4.9.8 0 1.3.3 1.3 1.2 0 1-16.2 24.6-31 24.6-11.3 0-22.1-12.2-33.6-25.4-12.5 11.9-26.8 19.8-43.3 19.8-22.1 0-32.6-14.1-32.6-29.1 0-17.6 14.2-36.9 40.6-36.9 12.8 0 23.9 5.9 34.1 13.7 8.3-11.3 42.5-59.7 50.9-71.5-15.2-7.4-26-20.5-26-31 0-6.6 5.6-11.2 7.9-11.2 2 0 2.7 3.9 4.2 6.9 5.1 10.3 13.8 17.6 23.8 22.2C150.1 13.9 165.9 0 184.6 0c13.2 0 19.6 7.1 19.6 15.9 0 15.3-18.4 35.6-53.5 35.6zM31.2 117.4c-12.5 0-20.9 9-20.9 19 0 9.3 6.6 16.4 18.4 16.4 11.5 0 22.1-7.8 32.6-19.3-9.4-9.1-19.2-16.1-30.1-16.1zM183.6 8.3c-9.8 0-19.2 12.2-29.7 29.1 2.4.3 4.9.5 7.3.5 21.1 0 31.5-11.7 31.5-20.3 0-5.2-3.3-9.3-9.1-9.3z"/>
+          <path d="M369.2 55.4c-5.2 0-10.6 9.1-16.7 20-6.1 10.7-10.6 21.2-14.8 28.8-4.2 7.4-20.9 23.4-25.5 23.4-1.7 0-2.4-1-2.4-2.9 0-6.6 4.7-18.5 10.6-30.3 9.6-19.1 18.6-29.6 18.6-32 0-4.9-7.8-5.2-12.1-5.2-6.7 0-16.9 15.2-25.1 31-1.5 2.9-3 5.8-4.4 8.7-3.9 8-8.7 15.5-14.5 22.1-5.1 5.8-10.7 10.8-15 10.8-2.4 0-6.1-1.2-6.1-6.8 0-8 13.3-31.9 25.8-55.3h15c5.1 0 15.6-13.5 7.6-13.5h-15.4c6.1-11.3 8.5-16.2 8.5-18.2 0-3.7-4.7-11-12.5-11-2 0-10.7 15.4-18.1 29.2h-33.4c20.9-12.6 30.6-30.7 30.6-39 0-5.4-6.7-8.4-9.9-8.4-4.7 0-19.4 19.7-22.4 23.8-1.5 2.2-9.5 12.4-16 23.6h-10.1c-5.4 0-6.8 13.5-4.3 13.5h8.8c-3.3 5.8-7.2 12.7-11.3 19.9 0 0-5.7 9.5-9.2 14.4-7.4 9.7-21.6 27.3-37.9 27.3-6.2 0-8.9-4.7-8.9-12.2 0-4.1 1.3-8.8 3.5-13.9.5.2 1 .2 1.5.2 27.2 0 45.9-22 45.9-34.7 0-6.6-5.1-12.9-10.5-12.9-3.5 0-6.7 1.9-12.8 1.9-22.6 0-47.9 38.6-47.9 60.1 0 13.9 8.9 25.6 20.4 25.6 11.4 0 22.5-6 31.6-13.5-14.1 24.3-26 45-26 51.4 0 4.4 2.5 10 6.1 10 7.9 0 32-24.4 50.6-54 15-24 26.7-53 28.3-69.6h26.5l-2.3 4c-8.4 15.7-26.5 47.1-26.5 58.9 0 9.8 12.5 16.1 23.4 16.1 8.2 0 19.8-11.8 28.3-22.8.4 12.4 5.5 19.1 12.5 19.1 9.3 0 18.2-8 24.3-14.6l.5.3c-2.2 4.4-6.2 12.7-12.1 29.8-5.7 17.1-10.8 45.9-33.2 45.9-8.9 0-18-6.4-18-17.4 0-9.7 8.6-19.3 23.6-19.3 8.3 0 14.5 5.8 14.5 9.7v1.5c0 .3 0 .7.5.7 1.2 0 2-2 2-4.9 0-17.3-9.6-25.2-20.6-25.2-14.2 0-30.4 13-30.4 35.4 0 15.9 11.8 30.3 31.4 30.3 12.6 0 26.5-6.9 35.1-18.5 8.8-11.7 19.7-45.4 32.6-74.3 12.8-29 29.2-53 29.2-61-.3-4.2-7.6-6-11.5-6zM183.9 65.5c2 0 3 1 3 2.9 0 9.7-17.4 23.4-30.7 26.2 8.5-14.9 21.8-29.1 27.7-29.1zm25 57.6c-11.1 20-24.8 36.4-25 36.4-.3 0-.5-.2-.5-.5s12.3-22 20.9-37.9c8.6-15.7 19.6-34.4 19.9-34.4.3 0 .7.2.7.5.1.5-5.7 17.8-16 35.9zm27.2-77.5s12.3-23.3 16.8-20.8c4.4 2.5.9 13.7-16.8 20.8zM382.6 79.2c-1.7.1-2.2-.6-2.2-1.3 0-.7.5-1.4.8-1.4 8.1-.3 15-8.9 14.8-13.8 0-.3 0-.7-.2-1-6.4-.1-10.5-5.2-10.7-11.5-.3-8.6 6.9-18.4 16-18.7 7.8-.3 11.9 6.2 12.2 14.5.5 13.7-9.5 32.4-30.7 33.2zM435.3 87.7c-.8 4.2-1.9 9.3-3.2 14.9 1.5.5 2.9.7 3.9.7 3.5 0 4.2-2.2 4.6-2.2.8 0 1 .2 1 .8v.3c.2 9.8-6.4 15.6-12.8 15.6h-1.3c-8.3 20.5-25 29.5-39.6 29.5-14.7 0-27.2-9-27.2-24.6 0-14.2 11.6-29.6 29.3-29.6 2.4 0 4.7.2 7.1.5 4.9-5.6 11-13.2 16.2-21.2 9.3-14.1 22.6-22 29-22 4.2 0 7.4 1.5 7.4 3.9-.1 4-11.2 18.9-14.4 33.4zm-45.7 23.6c-11.1 0-16.9 7.3-16.9 13.9 0 5.2 3.7 10.2 11.3 10.2 7.8 0 17.4-5.8 22.6-21.2-6-1.6-11.6-2.9-17-2.9zm25.5-28.8c-1.3 1.9-5.7 7.4-10.1 12.7 2.2.7 4.4 1.2 6.6 1.9 1.7-6.3 3-11.2 4-14.2l-.5-.4z"/>
+        </svg>
+      </a>
+
+      <p class="dark-text">- Lefty's Food Stand Menu -</p>
+
+      <nav>
+        <a href="stand-menu.html" class="active">Stand Menu</a>
+        <a href="truck-menu.html">Truck Menu</a>
+      </nav>
+
+    </header>
+
+    <!-- Section 1 -->
+    <div class="section menu-section-1">
+
+      <h1 class="light-text stand-menu-title">
+        <span id="authentic-text"> Authentic </span><br>
+        <span id="chicago-style-text"> Chicago Style </span><br>
+        <span id="hotdogs-text"> HotDogs </span>
+      </h1>
+
+      <i class="fas fa-chevron-down"></i>
+
+    </div>
+
+    <!-- Section 2 - Hot Dogs -->
+    <div class="section menu-food-section" id="hot-dogs">
+
+      <h2 class="primary-text" data-aos="fade-right">Hot Dogs</h2>
+
+      <div class="line-div-yellow" data-aos="fade-left"></div>
+
+      <!-- Menu Items -->
+      <div class="food-menu-item-container">
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">Chicago Dog</h3>
+          <p class="food-menu-item-description">The Classic. Topped with yellow mustard, green relish, onions, tomatoes, cucumbers, sport peppers, and celery salt.</p>
+          <p class="food-menu-item-price primary-text">$3.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">The Boring Dog</h3>
+          <p class="food-menu-item-description">Topped with ketchup, mustard, and a pickle. For the people who love the simple things in life, even if it is a bit plain.</p>
+          <p class="food-menu-item-price primary-text">$2.75</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">Cheddar Cheese Dog</h3>
+          <p class="food-menu-item-description">Another classic, however, this is Wisconsin, we do cheese up right. If you are looking for cheese, we got your fix.</p>
+          <p class="food-menu-item-price primary-text">$3.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">Chili Dog</h3>
+          <p class="food-menu-item-description">A chili dogs success relies on the chili. Lefty's puts time and consideration into all of our ingredients so you get the best.</p>
+          <p class="food-menu-item-price primary-text">$3.75</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">Chili Cheese Dog</h3>
+          <p class="food-menu-item-description">Back at it with the chili, this time adding Wisconsin's best topping, CHEESE.</p>
+          <p class="food-menu-item-price primary-text">$4.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title dark-text">Rolled Chicago Dog</h3>
+          <p class="food-menu-item-description">We took some kids fries and rolled them around your dog on top, if that makes sense? Just try it, you won't be sorry.</p>
+          <p class="food-menu-item-price primary-text">$4.00</p>
+        </div>
+
+      </div>
+
+      <p class="dark-text" id="upgrade-dog">Make any hotdog a 1/4 pound jumbo dog for $1.50 more.</p>
+
+    </div>
+
+    <!-- Section 3 - Specialty Dogs  -->
+    <div class="section menu-food-section" id="specialty-dogs">
+
+      <h2 class="primary-text" data-aos="fade-right">Specialty Dogs</h2>
+
+      <div class="line-div-dark" data-aos="fade-left"></div>
+
+      <!-- Menu Items -->
+      <div class="food-menu-item-container">
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Wisconsin Dog</h3>
+          <p class="food-menu-item-description dark-text">A savory beef dog topped with cheese curds, ranch or ketchup, &amp; bacon. A real bite of Wisconsin.</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">The Porker</h3>
+          <p class="food-menu-item-description dark-text">For any meat and barbeque lovers, this dog is topped with BBQ pork, onion ring bits, and BBQ sauce.</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">The Georgy</h3>
+          <p class="food-menu-item-description dark-text">Another delicious option for all of the meat lovers out there, this dog is wrapped with juicy, bacon.</p>
+          <p class="food-menu-item-price primary-text">$4.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">The Melty Dog</h3>
+          <p class="food-menu-item-description dark-text">This hotdog gives you the best of both worlds, either BBQ or ranch and melted mozzarella cheese.</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">The B.T.C.</h3>
+          <p class="food-menu-item-description dark-text">This bacon wrapped hotdog comes with tomato, cucumber, and either mayo or ranch.</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">The Weekly Dog</h3>
+          <p class="food-menu-item-description dark-text">Every week we get creative and create our own hotdog. Please stop in and check out what it is this week!</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Section 4 - Other Stuff -->
+    <div class="section menu-food-section" id="other-stuff">
+
+      <h2 class="primary-text" data-aos="fade-right">Other Stuff</h2>
+
+      <div class="line-div-yellow" data-aos="fade-left"></div>
+
+      <!-- Menu Items -->
+      <div class="food-menu-item-container">
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Pizza Puff</h3>
+          <p class="food-menu-item-description">The original Pizza Puff is a great choice if you're looking for that Chicago taste, but not in the market for a hotdog.</p>
+          <p class="food-menu-item-price primary-text">$3.25</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Corn Dog</h3>
+          <p class="food-menu-item-description"> Nothing says summer like a good ol' corn dog. This is also a solid option for a person on the move.</p>
+          <p class="food-menu-item-price primary-text">$2.50</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Tamale</h3>
+          <p class="food-menu-item-description">Another delicious option for all of the meat lovers out there, this dog is wrapped with juicy, bacon.</p>
+          <p class="food-menu-item-price primary-text">$2.25</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Tamale Boat</h3>
+          <p class="food-menu-item-description">This hotdog gives you the best of both worlds, either BBQ or ranch and melted mozzarella cheese.</p>
+          <p class="food-menu-item-price primary-text">$4.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Onion Rings</h3>
+          <p class="food-menu-item-description">This bacon wrapped hotdog comes with tomato, cucumber, and either mayo or ranch.</p>
+          <p class="food-menu-item-price primary-text">$3.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Cheese Curds</h3>
+          <p class="food-menu-item-description">Every week we get creative and create our own hotdog. Please stop in and check out what it is this week!</p>
+          <p class="food-menu-item-price primary-text">$3.75</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Mac N' Cheese Bites</h3>
+          <p class="food-menu-item-description">Every week we get creative and create our own hotdog. Please stop in and check out what it is this week!</p>
+          <p class="food-menu-item-price primary-text">$3.75</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Mini Tacos</h3>
+          <p class="food-menu-item-description">Every week we get creative and create our own hotdog. Please stop in and check out what it is this week!</p>
+          <p class="food-menu-item-price primary-text">$3.75</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Wings</h3>
+          <p class="food-menu-item-description">Every week we get creative and create our own hotdog. Please stop in and check out what it is this week!</p>
+          <p class="food-menu-item-price primary-text">$4.50</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Section 5 - Extras  -->
+    <div class="section menu-food-section" id="stand-extras">
+
+      <h2 class="primary-text" data-aos="fade-right">Extras</h2>
+
+      <div class="line-div-dark" data-aos="fade-left"></div>
+
+      <!-- Menu Items -->
+      <div class="food-menu-item-container">
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Soda</h3>
+          <p class="food-menu-item-price dark-text">$1.25</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Bottled Water</h3>
+          <p class="food-menu-item-price dark-text">$1.00</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Sauces</h3>
+          <p class="food-menu-item-price dark-text">50&#162;</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Chicago Fixings</h3>
+          <p class="food-menu-item-price dark-text">50&#162;</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Cheddar Cheese</h3>
+          <p class="food-menu-item-price dark-text">75&#162;</p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Mozzarella Cheese</h3>
+          <p class="food-menu-item-price dark-text">$1.00</p>
+        </div>
+
+      </div>
+
+      <p class="primary-text" id="extra-peppers" data-aos="fade-up">Fried Pepper, Fried Onions, Sport Peppers, or Giardiniera Peppers <span>75&#162;</span> each</p>
+
+    </div>
+
+    <!-- Section 6 - Shakes -->
+    <div class="section menu-food-section" id="shakes">
+
+      <h2 class="primary-text" data-aos="fade-right">Shakes, Malts, &amp; Floats</h2>
+
+      <div class="line-div-yellow" data-aos="fade-left"></div>
+
+      <!-- Menu Items -->
+      <div class="food-menu-item-container">
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Vanilla</h3>
+          <p class="food-menu-item-description">Regular <span>$3.75</span></p>
+          <p class="food-menu-item-description">Large <span>$4.50</span></p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Chocolate</h3>
+          <p class="food-menu-item-description">Regular <span>$3.75</span></p>
+          <p class="food-menu-item-description">Large <span>$4.50</span></p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Caramel</h3>
+          <p class="food-menu-item-description">Regular <span>$3.75</span></p>
+          <p class="food-menu-item-description">Large <span>$4.50</span></p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Strawberry</h3>
+          <p class="food-menu-item-description">Regular <span>$3.75</span></p>
+          <p class="food-menu-item-description">Large <span>$4.50</span></p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Rootbeer Float</h3>
+          <p class="food-menu-item-description">Regular <span>$3.75</span></p>
+          <p class="food-menu-item-description">Large <span>$4.50</span></p>
+        </div>
+
+        <div class="food-menu-item" data-aos="fade-up">
+          <h3 class="food-menu-item-title primary-text">Malts</h3>
+          <p class="food-menu-item-description">Regular <span>$4.00</span></p>
+          <p class="food-menu-item-description">Large <span>$4.75</span></p>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!-- Section 7 - Order -->
+    <div class="section" id="index-section-3">
+
+      <h2 class="primary-text" data-aos="fade-right">Come Eat</h2>
+
+      <div class="line-div-red" data-aos="fade-left"></div>
+
+      <p class="dark-text" data-aos="fade-up"> Our main location is open Monday through Sunday from 11am to 7pm. </p>
+
+      <div class="index-contact-btns">
+
+        <div class="section-index-contact-btns">
+          <a href="https://goo.gl/maps/EHSxBZ3Yizn" class="btn light-btn large-btn" target="_blank" data-aos="fade-right">Get Directions</a>
+          <a href="tel:262-215-8266" class="btn light-btn large-btn" data-aos="fade-left">Call In an Order</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+      <div class="wave-border">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3300 25">
+          <path d="M3285 5.3c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4s-10.6-1.5-15-4c-4.4 2.5-9.5 4-15 4v16h3300v-16c-5.5 0-10.6-1.5-15-4z"/>
+        </svg>
+      </div>
+
+      <div class="footer-content">
+
+        <a href="index.html">
+          <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 215">
+            <path d="M150.7 51.5c-1.9 0-3.5 0-5.2-.2-8.4 14.4-43.7 66.1-54.3 80.2 12.6 11.7 24.1 22.5 36.4 22.5 6.2 0 10.5-4.9 11.1-4.9.8 0 1.3.3 1.3 1.2 0 1-16.2 24.6-31 24.6-11.3 0-22.1-12.2-33.6-25.4-12.5 11.9-26.8 19.8-43.3 19.8-22.1 0-32.6-14.1-32.6-29.1 0-17.6 14.2-36.9 40.6-36.9 12.8 0 23.9 5.9 34.1 13.7 8.3-11.3 42.5-59.7 50.9-71.5-15.2-7.4-26-20.5-26-31 0-6.6 5.6-11.2 7.9-11.2 2 0 2.7 3.9 4.2 6.9 5.1 10.3 13.8 17.6 23.8 22.2C150.1 13.9 165.9 0 184.6 0c13.2 0 19.6 7.1 19.6 15.9 0 15.3-18.4 35.6-53.5 35.6zM31.2 117.4c-12.5 0-20.9 9-20.9 19 0 9.3 6.6 16.4 18.4 16.4 11.5 0 22.1-7.8 32.6-19.3-9.4-9.1-19.2-16.1-30.1-16.1zM183.6 8.3c-9.8 0-19.2 12.2-29.7 29.1 2.4.3 4.9.5 7.3.5 21.1 0 31.5-11.7 31.5-20.3 0-5.2-3.3-9.3-9.1-9.3z"/>
+            <path d="M369.2 55.4c-5.2 0-10.6 9.1-16.7 20-6.1 10.7-10.6 21.2-14.8 28.8-4.2 7.4-20.9 23.4-25.5 23.4-1.7 0-2.4-1-2.4-2.9 0-6.6 4.7-18.5 10.6-30.3 9.6-19.1 18.6-29.6 18.6-32 0-4.9-7.8-5.2-12.1-5.2-6.7 0-16.9 15.2-25.1 31-1.5 2.9-3 5.8-4.4 8.7-3.9 8-8.7 15.5-14.5 22.1-5.1 5.8-10.7 10.8-15 10.8-2.4 0-6.1-1.2-6.1-6.8 0-8 13.3-31.9 25.8-55.3h15c5.1 0 15.6-13.5 7.6-13.5h-15.4c6.1-11.3 8.5-16.2 8.5-18.2 0-3.7-4.7-11-12.5-11-2 0-10.7 15.4-18.1 29.2h-33.4c20.9-12.6 30.6-30.7 30.6-39 0-5.4-6.7-8.4-9.9-8.4-4.7 0-19.4 19.7-22.4 23.8-1.5 2.2-9.5 12.4-16 23.6h-10.1c-5.4 0-6.8 13.5-4.3 13.5h8.8c-3.3 5.8-7.2 12.7-11.3 19.9 0 0-5.7 9.5-9.2 14.4-7.4 9.7-21.6 27.3-37.9 27.3-6.2 0-8.9-4.7-8.9-12.2 0-4.1 1.3-8.8 3.5-13.9.5.2 1 .2 1.5.2 27.2 0 45.9-22 45.9-34.7 0-6.6-5.1-12.9-10.5-12.9-3.5 0-6.7 1.9-12.8 1.9-22.6 0-47.9 38.6-47.9 60.1 0 13.9 8.9 25.6 20.4 25.6 11.4 0 22.5-6 31.6-13.5-14.1 24.3-26 45-26 51.4 0 4.4 2.5 10 6.1 10 7.9 0 32-24.4 50.6-54 15-24 26.7-53 28.3-69.6h26.5l-2.3 4c-8.4 15.7-26.5 47.1-26.5 58.9 0 9.8 12.5 16.1 23.4 16.1 8.2 0 19.8-11.8 28.3-22.8.4 12.4 5.5 19.1 12.5 19.1 9.3 0 18.2-8 24.3-14.6l.5.3c-2.2 4.4-6.2 12.7-12.1 29.8-5.7 17.1-10.8 45.9-33.2 45.9-8.9 0-18-6.4-18-17.4 0-9.7 8.6-19.3 23.6-19.3 8.3 0 14.5 5.8 14.5 9.7v1.5c0 .3 0 .7.5.7 1.2 0 2-2 2-4.9 0-17.3-9.6-25.2-20.6-25.2-14.2 0-30.4 13-30.4 35.4 0 15.9 11.8 30.3 31.4 30.3 12.6 0 26.5-6.9 35.1-18.5 8.8-11.7 19.7-45.4 32.6-74.3 12.8-29 29.2-53 29.2-61-.3-4.2-7.6-6-11.5-6zM183.9 65.5c2 0 3 1 3 2.9 0 9.7-17.4 23.4-30.7 26.2 8.5-14.9 21.8-29.1 27.7-29.1zm25 57.6c-11.1 20-24.8 36.4-25 36.4-.3 0-.5-.2-.5-.5s12.3-22 20.9-37.9c8.6-15.7 19.6-34.4 19.9-34.4.3 0 .7.2.7.5.1.5-5.7 17.8-16 35.9zm27.2-77.5s12.3-23.3 16.8-20.8c4.4 2.5.9 13.7-16.8 20.8zM382.6 79.2c-1.7.1-2.2-.6-2.2-1.3 0-.7.5-1.4.8-1.4 8.1-.3 15-8.9 14.8-13.8 0-.3 0-.7-.2-1-6.4-.1-10.5-5.2-10.7-11.5-.3-8.6 6.9-18.4 16-18.7 7.8-.3 11.9 6.2 12.2 14.5.5 13.7-9.5 32.4-30.7 33.2zM435.3 87.7c-.8 4.2-1.9 9.3-3.2 14.9 1.5.5 2.9.7 3.9.7 3.5 0 4.2-2.2 4.6-2.2.8 0 1 .2 1 .8v.3c.2 9.8-6.4 15.6-12.8 15.6h-1.3c-8.3 20.5-25 29.5-39.6 29.5-14.7 0-27.2-9-27.2-24.6 0-14.2 11.6-29.6 29.3-29.6 2.4 0 4.7.2 7.1.5 4.9-5.6 11-13.2 16.2-21.2 9.3-14.1 22.6-22 29-22 4.2 0 7.4 1.5 7.4 3.9-.1 4-11.2 18.9-14.4 33.4zm-45.7 23.6c-11.1 0-16.9 7.3-16.9 13.9 0 5.2 3.7 10.2 11.3 10.2 7.8 0 17.4-5.8 22.6-21.2-6-1.6-11.6-2.9-17-2.9zm25.5-28.8c-1.3 1.9-5.7 7.4-10.1 12.7 2.2.7 4.4 1.2 6.6 1.9 1.7-6.3 3-11.2 4-14.2l-.5-.4z"/>
+          </svg>
+        </a>
+
+        <nav>
+          <a href="index.html">Homepage</a>
+          <a href="stand-menu.html" class="active">Stand Menu</a>
+          <a href="truck-menu.html">Truck Menu</a>
+        </nav>
+
+        <p class="light-text" id="footer-location"> N7033 US-12, Elkhorn, WI 53121 </p>
+        <p class="light-text"> Phone: (262) 215-8266 </p>
+        <p class="light-text"> &copy;2018 Lefty's </p>
+
+      </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/scripts.js"></script>
+    <script type="text/javascript" src="./assets/scripts/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+
+
+</html>

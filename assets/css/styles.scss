@@ -1,0 +1,58 @@
+//typekit fonts
+@import url("https://use.typekit.net/pco3yop.css");
+
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+$color1: #FF3605; //red
+$color2: #FFC300; //yellow
+$color3: #332C1E; //Dark Brown
+$color4: #fff; //White
+$color5: #9B9B9B; //grey
+$color6: #235789; //blue
+
+$font1: "house-slant", sans-serif;
+$font2: 'Varela Round', sans-serif;
+
+$s-width: 312px;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color2;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  font-family: $font2;
+  font-size: 18px;
+  color: $color5;
+}
+
+//hide on mobile
+@media only screen and (max-width: 640px) {.mobile-hide {display: none;}}
+
+//typography
+@import './partials/typography';
+
+//btns
+@import './partials/btns';
+
+//header
+@import './partials/header';
+
+//closed-today
+@import './partials/notification';
+
+//footer
+@import './partials/footer';
+
+//index
+@import './partials/index';
+
+//menu
+@import './partials/food-menu';
+
+//image-slider
+@import './partials/image-slider';
